@@ -2,7 +2,7 @@ import React from "react";
 import TaskGroup from "../../components/TakGroup";
 import useStore from "../../store/context";
 
-import "./styles.css"
+import "./styles.css";
 
 const Home = () => {
     const [data, dispatch] = useStore();
@@ -13,15 +13,15 @@ const Home = () => {
         });
     };
 
-    console.log("Home", data);
-
     return (
         <div>
             <section className="container">
-                {data.map((task, idx) => (
-                    <TaskGroup task={task} key={idx} id={idx} />
+                {data.map((task) => (
+                    <TaskGroup task={task} key={task.id} id={task.id} />
                 ))}
-                <button className="addTaskGroup" onClick={addTaskGroup}>Add Task Group</button>
+                <button className="addTaskGroup" onClick={addTaskGroup}>
+                    Add Task Group
+                </button>
             </section>
         </div>
     );

@@ -3,7 +3,7 @@ import TaskCard from '../TaskCard'
 import useStore from "./../../store/context"
 import "./styles.css"
 
-const TaskGroup = ({task: {tasks, title}, id}) => {
+const TaskGroup = ({task: {tasks, title, id}}) => {
   const [_, dispatch] = useStore();
   const deleteTaskGroup = () => {
     dispatch({
