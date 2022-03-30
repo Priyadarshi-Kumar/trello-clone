@@ -1,0 +1,8 @@
+.taskGroup {
+    width: 240px;
+    height: 440px;
+    background: #e6e9e9;
+    border: 1px solid lightgray;
+    margin: 8px;
+    box-shadow: 4px 4px 6px lightgrey;
+}

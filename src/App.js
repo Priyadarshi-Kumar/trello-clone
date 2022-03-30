@@ -1,4 +1,5 @@
 import './App.css';
+import Home from './pages/Home';
 import useStore, { AppProvider } from './store/context';
 
 const App = () => {
@@ -7,7 +8,7 @@ const App = () => {
   return (
     <AppProvider>
       <div className="App">
-        Hello
+        <Home />
       </div>
     </AppProvider>
     

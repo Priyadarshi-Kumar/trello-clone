@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.addTaskGroup {
+    width: 140px;
+    height: 40px;
+}

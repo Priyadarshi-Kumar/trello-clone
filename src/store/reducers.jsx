@@ -1,7 +1,7 @@
 export const reducer = (state, action) => {
     switch(action.type) {
         case "ADD_TASK_GROUP":
-            return [...state, {title: "New Task Group"}]
+            return [...state, {title: "New Task Group", tasks: []}]
         case "ADD_TASK_TO_GROUP":
             const {idx, data} = action.payload;
             const taskGroup = state[idx];
